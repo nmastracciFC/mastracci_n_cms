@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Welcome to your admin panel login</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
 	<?php

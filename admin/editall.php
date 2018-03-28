@@ -9,6 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>THE ONLY EDIT FORM</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
 	<?php

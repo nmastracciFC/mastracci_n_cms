@@ -22,6 +22,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Movie</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
 	<?php if(!empty($message)){ echo $message;} ?>

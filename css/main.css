@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*COLOUR SCHEME
+light grey: #adadad
+light pink: #e8cadb
+dusty pink: #ab809a
+rich pink: #7d274e
+almost black: #0b0a16
+*/
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+body {
+	background-color: #7d274e;
+	font-family:'avenir', sans-serif;
+
+}
+h1 {
+	font-family: 'Berkshire Swash', cursive;
+
+}
+.logo {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 4.3em;
+	color: #e8cadb;
+	padding: 1em;
+	display: inline-block;
+}
+
+.genre-nav {
+	display: inline-block;
+	text-align:right;
+	margin: 1em;
+	float:right;
+	margin-top: 6em;
+}
+
+.genre-nav ul {
+	
+	padding: 1em;
+
+}
+.genre-nav li {
+	display: inline-block;
+	list-style: none;
+	padding: 0.5em 1em;
+
+
+
+}
+.genre-nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #0b0a16;
+	transform: all 0.5s ease;
+
+	
+}
+.genre-nav a:hover {
+	color: #adadad;
+}
+.movie-list {
+	display:inline-block;
+	padding: 1.5em;
+	text-align: center;
+}
+.movie-list img {
+	height: 8em;
+	text-align: center;
+	background: rgb(173,173,173);
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	transition: all 0.5s ease;
+}
+
+.movie-list img:hover{
+	filter:grayscale(0%);
+	cursor:pointer;
+}
+.movie-list h2 {
+	color: #e8cadb;
+	
+}
+.movie-list p {
+	color: #0b0a16;
+}
+.movie-list a {
+	text-decoration: none;
+	color: #e8cadb;
+	transform: all 0.5s ease;
+
+	
+}
+.movie-list a:hover {
+	color: #adadad;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

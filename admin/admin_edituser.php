@@ -23,6 +23,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Edit User</title>
+<link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
 	<h2>Edit User</h2>
