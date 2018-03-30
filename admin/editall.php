@@ -1,7 +1,10 @@
 <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 	require_once('phpscripts/config.php');
 	$result = multiReturns(17); //go to functions.php with this method
 	list($add, $multiply) = multiReturns(245);//this does the same thing but is more semantic for other developers
+
 	
 ?>
 <!doctype html>
@@ -16,12 +19,14 @@
 	
 	<div class="main-content">
 	<?php
+	echo $table;
+	
 
 	//now you can just pass info into these variables and you will get the edit form dynamically created!
-		$tbl = "tbl_movies";
-		$col = "movies_id";
-		$id = 1; //this is hardcoded but you use get to pass in id otherwise
-		echo single_edit($tbl, $col, $id);
+		// $tbl = "tbl_movies";
+		// $col = "movies_id";
+		// $id = 1; //this is hardcoded but you use get to pass in id otherwise
+		// echo single_edit($tbl, $col, $id);
 
 	?>
 	</div>

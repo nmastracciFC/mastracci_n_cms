@@ -4,13 +4,13 @@ include('connect.php');
 
 	$tbl = $_POST['tbl'];
 	$col = $_POST['col'];
-	$id = $_POST['id'];
+	// $id = $_POST['id'];
 
 
 	//remove from array
 	unset($_POST['tbl']);
 	unset($_POST['col']);
-	unset($_POST['id']);
+	// unset($_POST['id']);
 	unset($_POST['submit']);
 
 	

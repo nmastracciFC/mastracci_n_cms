@@ -3,15 +3,17 @@
 function getAll($table) {
 	include('connect.php');
 	$queryAll = "SELECT * FROM {$table}";
-	//whenever you have a variable you have to pass it as an argument(in the brackets of the function) 
+	//whenever you have a variable you have to pass it as an argument(in the brackets of the function)
+	// var_dump($queryAll);
 	$runAll = mysqli_query($link, $queryAll);//runs the query with the link from the database
 	// echo $queryAll; //double checks we're returning the table name from index.php
+	// var_dump($runAll);die;
 	if($runAll){ 
-		//if runall is an object then return it to index.php
+		//if runAll is an object then return it to index.php
 		return $runAll;
 
 	} else {
-		$error = "there was a problem accessing information";
+		$error = "FROM GETALL: there was a problem accessing information";
 		return $error;
 	}
 
@@ -24,13 +26,14 @@ function getAll($table) {
 function getSingle($table, $column, $id){ //order matters
 	include('connect.php');
 	$querySingle = "SELECT * FROM {$table} WHERE {$column} = {$id}";
-	$runSingle = mysqli_query($link, $querySingle);
 
+	$runSingle = mysqli_query($link, $querySingle);
+// var_dump($runSingle[0]);die;
 	if($runSingle){
 		return $runSingle;
 
 	}else{
-		$error = "there was a problem accessing information";
+		$error = "FROM GETSINGLE: there was a problem accessing information";
 		return $error;
 	}
 	mysqli_close($link);
@@ -50,7 +53,7 @@ function filterType($table, $table2, $tableLink,$column, $column2, $column3, $fi
 	if($runFilter){//if an object return back, if not return error message
 		return $runFilter;
 	}else {
-		$error = "there was a problem accessing information";
+		$error = "FROM FILTERTYPE: there was a problem accessing information";
 		return $error;
 	}
 	mysqli_close($link);

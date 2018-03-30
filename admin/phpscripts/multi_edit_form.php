@@ -1,6 +1,6 @@
 <?php
-function single_edit($table, $column, $id) {
-	$result = getSingle($table, $column, $id);
+function multi_edit($table, $column) {
+	$result = getAll($table);
 	// var_dump($result); die;
 	$getResult = mysqli_fetch_array($result);
 
@@ -8,7 +8,7 @@ function single_edit($table, $column, $id) {
 
 	echo "<input hidden name=\"tbl\" value=\"{$table}\"> ";
 	echo "<input hidden name=\"col\" value=\"{$column}\"> ";
-	echo "<input hidden name=\"id\" value=\"{$id}\"> ";
+	// echo "<input hidden name=\"id\" value=\"{$id}\"> ";
 
 	// echo mysqli_num_fields($result);//how many columns are in this table
 	for($i = 0; $i<mysqli_num_fields($result); $i++){
@@ -23,7 +23,7 @@ function single_edit($table, $column, $id) {
 		//tells you the field names and types for every column
 		// echo $fieldName."<br>";
 		// echo $fieldType."<br>";
-
+		// var_dump($column); die;
 			if($fieldName != $column) {
 				//do not allow them access to the id column
 				echo "<div class=\"field-area\"><label>{$fieldName}</label>";

@@ -215,6 +215,18 @@ h1 {
 	font-size: 2em;
 	margin-bottom: 2em;
 }
+.main-content h3 {
+	margin-top: 2.5em;
+	font-size: 1.2em;
+	
+	/*margin-top: 2.5em;*/
+}
+.main-content h3:last-child {
+	/*font-size: 1.3em;*/
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	
+}
 .main-content input {
 	border-radius: 5em;
 	padding:1em;
