@@ -39,6 +39,7 @@ if(isset($_POST['submit'])) {
 <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
+	<h1 class="logo">Newflix</h1>
 	<h2>Create User</h2>
 	<?php if(!empty($message)){echo $message;} ?>
 	<form action="admin_createuser.php" method="post">

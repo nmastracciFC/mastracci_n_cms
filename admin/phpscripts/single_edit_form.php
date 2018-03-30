@@ -25,12 +25,12 @@ function single_edit($tbl, $col, $id) {
 
 			if($fieldName != $col) {
 				//do not allow them access to the id column
-				echo "<label>{$fieldName}</label><br>";
+				echo "<div class=\"field-area\"><label>{$fieldName}</label>";
 				if($fieldType !="252") {
 					//if field type is not equal to 252
-					echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"><br> ";
+					echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"></div><br> ";
 				} else {
-					echo "<textarea name=\"{$fieldName}\">{$getResult[$i]}</textarea><br> ";
+					echo "<textarea name=\"{$fieldName}\">{$getResult[$i]}</textarea></div><br> ";
 				}
 			}
 	}

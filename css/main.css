@@ -47,11 +47,14 @@ light pink: #e8cadb
 dusty pink: #ab809a
 rich pink: #7d274e
 almost black: #0b0a16
+
+yellow: #eba42d
+deep blue: #121137
 */
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 body {
-	background-color: #7d274e;
+	background-color: #121137;
 	font-family:'avenir', sans-serif;
 
 }
@@ -62,10 +65,11 @@ h1 {
 .logo {
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 4.3em;
-	color: #e8cadb;
+	color: #eba42d;
 	padding: 1em;
 	display: inline-block;
 }
+
 
 .genre-nav {
 	display: inline-block;
@@ -91,14 +95,38 @@ h1 {
 .genre-nav a {
 	display: inline-block;
 	text-decoration: none;
-	color: #0b0a16;
+	color: #adadad;
 	transform: all 0.5s ease;
 
 	
 }
 .genre-nav a:hover {
-	color: #adadad;
+	color: #eba42d;
 }
+.footer {
+	background-color: #eba42d;
+	width: 100%;
+	/*height: 5em;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
+}
+.footer-nav {
+	padding:1em;
+	text-decoration: none;
+}
+.footer-nav li {
+	padding: 0.3em;
+}
+.footer-nav a {
+	text-decoration: none;
+	color: #000;
+	transition: all 0.5s ease;
+}
+.footer-nav a {
+	margin-left: 0.5em;
+
+}
+
 .movie-list {
 	display:inline-block;
 	padding: 1.5em;
@@ -118,11 +146,12 @@ h1 {
 	cursor:pointer;
 }
 .movie-list h2 {
-	color: #e8cadb;
+	color: #eba42d;
+	margin-bottom: 0.5em;
 	
 }
 .movie-list p {
-	color: #0b0a16;
+	color: #adadad;
 }
 .movie-list a {
 	text-decoration: none;
@@ -135,6 +164,29 @@ h1 {
 	color: #adadad;
 	
 }
+.movie-detail {
+	margin: 3em;
+}
+.movie-detail img {
+	width: 10em;
+	display: inline-block;
+}
+.movie-info{
+	display:inline-block;
+	color: #adadad;
+	width: 30em;
+}
+.movie-info p {
+	margin:0.5em;
+}
+
+.movie-info a {
+	text-decoration: none;
+	color: #e8cadb;
+	transform: all 0.5s ease;
+	margin:2em;
+}
+
 
 
 

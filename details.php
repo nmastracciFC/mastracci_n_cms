@@ -13,17 +13,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Details</title>
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
+	<?php include('includes/nav.html'); ?>
+<section class="movie-detail">
+	
 	<?php
 		if(!is_string($getMovie)) {
 			$row=mysqli_fetch_array($getMovie);
 			echo "<img src=\"images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
+			<div class=\"movie-info\">
 			<p>{$row['movies_title']}</p>
 			<p>{$row['movies_year']}</p>
 			<p>{$row['movies_storyline']}</p>
-			<a href=\"index.php\">Back...</a>
+			<a href=\"index.php\">SEE ALL MOVIES</a>
+			</div>
 			";
 			
 		}else{
@@ -31,6 +37,8 @@
 		}
 
 	?>
-
+	
+</section>
+<?php include('includes/footer.html'); ?>
 </body>
 </html>

@@ -12,7 +12,9 @@
 <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
+	<div class="main-content">
 	<?php
+	
 	//now you can just pass info into these variables and you will get the edit form dynamically created!
 		$tbl = "tbl_movies";
 		$col = "movies_id";
@@ -20,6 +22,6 @@
 		echo single_edit($tbl, $col, $id);
 
 	?>
-
+	</div>
 </body>
 </html>

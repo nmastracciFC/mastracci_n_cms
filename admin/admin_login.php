@@ -22,6 +22,8 @@
 <link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
+	<h1 class="logo">Newflix</h1>
+	<div class="main-content">
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_login.php" method="post">
 		<label>Username:</label>
@@ -32,6 +34,6 @@
 		<br><br>
 		<input type="submit" name="submit" value="Show me the money">
 	</form>
-
+	</div>
 </body>
 </html>

@@ -51,13 +51,18 @@ almost black: #0b0a16
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 body {
-	background-color: #7d274e;
+	background-color: #121137;
 	font-family:'avenir', sans-serif;
 
 }
 h1 {
 	font-family: 'Berkshire Swash', cursive;
 
+}
+input {
+	border-radius: 5em;
+	padding:1em;
+	margin: 1em;
 }
 .logo {
 	font-family: 'Berkshire Swash', cursive;
@@ -66,3 +71,23 @@ h1 {
 	padding: 1em;
 	display: inline-block;
 }
+.main-content {
+	padding:3em;
+}
+.field-area {
+	/*margin:1em;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
