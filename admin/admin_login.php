@@ -18,22 +18,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to your admin panel login</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<h1 class="logo">Newflix</h1>
+	<?php include('../includes/nav.php'); ?>
 	<div class="main-content">
-	<?php if(!empty($message)){ echo $message;} ?>
-	<form action="admin_login.php" method="post">
-		<label>Username:</label>
-		<input type="text" name="username" value="">
-		<br>
-		<label>Password</label>
-		<input type="password" name="password" value="">
-		<br><br>
-		<input type="submit" name="submit" value="Show me the money">
-	</form>
+		<?php if(!empty($message)){ echo $message;} ?>
+		<form action="admin_login.php" method="post">
+			<label>Username:</label>
+			<input type="text" name="username" value="">
+			<br>
+			<label>Password</label>
+			<input type="password" name="password" value="">
+			<br><br>
+			<input type="submit" name="submit" value="Show me the money">
+		</form>
 	</div>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

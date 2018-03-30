@@ -22,10 +22,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Edit User</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+	<?php include('../includes/nav.php'); ?>
+	<section class="main-content">
 	<h2>Edit User</h2>
 	<?php if(!empty($message)){echo $message;} ?>
 	<form action="admin_edituser.php" method="post">
@@ -39,5 +41,7 @@
 		<input type="text" name="email" value="<?php echo $info['user_email'];  ?>"><br><br>
 		<input type="submit" name="submit" value="Edit Account">
 	</form>
+	</section>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

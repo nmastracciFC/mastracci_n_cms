@@ -9,17 +9,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to your admin panel</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<h1 class="logo">Newflix</h1>
+	<?php include('../includes/nav.php'); ?>
+	
 	<section class="main-content">
 		<h2>Hi <?php echo $_SESSION['user_fname'];?>! What would you like to alter?</h2>
-		<a href="admin_createuser.php">Create User</a>
-		<a href="admin_edituser.php">Edit User</a>
-		<a href="admin_deleteuser.php">Delete User</a>
-		<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
+		<a class="button-nav" href="admin_choosetable.php">Edit Site Info</a>
+		<a class="button-nav" href="admin_createuser.php">Create User</a>
+		<a class="button-nav" href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
 	</section>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

@@ -8,13 +8,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>THE ONLY EDIT FORM</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+	<?php include('../includes/nav.php'); ?>
+	
 	<div class="main-content">
 	<?php
-	
+
 	//now you can just pass info into these variables and you will get the edit form dynamically created!
 		$tbl = "tbl_movies";
 		$col = "movies_id";
@@ -23,5 +25,6 @@
 
 	?>
 	</div>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

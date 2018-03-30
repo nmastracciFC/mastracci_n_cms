@@ -21,10 +21,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Add Movie</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+	<?php include('../includes/nav.php'); ?>
+	
+	<section class="main-content">
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
 		<label>Cover Image:</label>
@@ -58,6 +61,7 @@
 		</select><br><br>
 		<input type="submit" name="submit" value="Add Movie">
 	</form>
-
+	</section>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

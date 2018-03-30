@@ -104,8 +104,15 @@ h1 {
 	color: #eba42d;
 }
 .footer {
+	display:block;
 	background-color: #eba42d;
-	width: 100%;
+	/*width: 100%;*/
+	/*position: absolute;*/
+  	
+  	bottom: 0;
+  
+  	margin-top: 3em;
+  	padding:1em;
 	/*height: 5em;*/
 	/*position: absolute;*/
 	/*bottom: 0;*/
@@ -113,18 +120,28 @@ h1 {
 .footer-nav {
 	padding:1em;
 	text-decoration: none;
+	display:inline-block;
 }
 .footer-nav li {
 	padding: 0.3em;
+	transition: all 0.5s ease;
+
+}
+.footer-nav li:hover {
+	margin-left: 0.5em;
+
 }
 .footer-nav a {
 	text-decoration: none;
 	color: #000;
 	transition: all 0.5s ease;
 }
-.footer-nav a {
-	margin-left: 0.5em;
-
+.footer-legal {
+	display:inline-block;
+	padding:1em;
+	/*float: right;*/
+	text-align: right;
+	vertical-align: center;
 }
 
 .movie-list {
@@ -188,6 +205,41 @@ h1 {
 }
 
 
+/*ADMIN CSS PAGES*/
+
+.main-content {
+	padding:3em;
+	color: #adadad;
+}
+.main-content h2 {
+	font-size: 2em;
+	margin-bottom: 2em;
+}
+.main-content input {
+	border-radius: 5em;
+	padding:1em;
+	margin: 1em;
+
+}
+.main-content label {
+	color: #adadad;
+}
+.field-area {
+	/*margin:1em;*/
+}
+.button-nav {
+	padding: 0.5em;
+	border: 0.3em solid #fff;
+	border-radius: 10em;
+	text-decoration: none;
+	color: #adadad;
+	transition: all 0.5s ease;
+	margin: 1em;
+}
+.button-nav:hover {
+	color: #eba42d;
+	border: 0.5em solid #eba42d;
+}
 
 
 

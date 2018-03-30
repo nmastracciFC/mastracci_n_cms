@@ -35,11 +35,13 @@ if(isset($_POST['submit'])) {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Create User</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<h1 class="logo">Newflix</h1>
+	<?php include('../includes/nav.php'); ?>
+	
+	<section class="main-content">
 	<h2>Create User</h2>
 	<?php if(!empty($message)){echo $message;} ?>
 	<form action="admin_createuser.php" method="post">
@@ -58,10 +60,13 @@ if(isset($_POST['submit'])) {
 		<label>User Level: </label>
 		<select name="userlvl">
 			<option value="">Select User Level</option>
+			<option value="3">General User</option>
 			<option value="2">Web Admin</option>
 			<option value="1">Web Master</option>
 		</select><br><br>
 		<input type="submit" name="submit" value="Create User">
 	</form>
+	</section>
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

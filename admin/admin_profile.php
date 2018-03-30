@@ -48,29 +48,14 @@ if(isset($_POST['submit'])) {
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CMS Portal Login</title>
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<div class="triangle"></div>
-	<!-- <div class="triangle2"></div> -->
-	<div class="lipstick"></div>
-	<div class="logo">
-		<img src="images/logo_zou.svg" alt="Zou Lipstick logo">
-		<h1>Your Monthly Lipstick Subscription</h1>
-	</div>
-
-	<div class="side-bar">
-		<h1><?php echo $greetingPlain; ?>, <?php echo $_SESSION['user_fname'];?></h1>
-
-		<!-- <h2>Looking great today!</h2> -->
-		<h3><?php echo $greeting; ?></h3>
-		<h3><?php echo "The time is " . date("h:ia");?></h3>
-		<h3>Last Login:<br><?php echo date_create($_SESSION['user_lastlog'])->format('F d, Y  g:ia'); ?> </h3>
-		<h3 class="dash-link"><a href="admin_index.php">Back To Dashboard</a></h3>
-		
-	</div>
+	<?php include('../includes/nav.php'); ?>
 	
+	
+	<section class="main-content">
 	<div class="addUser">
 	<h1>Your Profile</h1>
 		
@@ -92,9 +77,9 @@ if(isset($_POST['submit'])) {
 
 	</form>
 	</div>
-	
+	</section>
 
 
-	
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

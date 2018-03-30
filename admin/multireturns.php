@@ -8,10 +8,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to your admin panel login</title>
-<link rel="stylesheet" type="text/css" href="css/admin.css">
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
+	<?php include('../includes/nav.php'); ?>
+	
 	<?php
 	echo "Result 1: {$result[0]}<br>";
 	echo "Result 2: {$result[1]}<br><br>";
@@ -21,6 +23,6 @@
 
 
 	?>
-
+	<?php include('../includes/footer.php'); ?>
 </body>
 </html>

@@ -12,12 +12,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Details</title>
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
 <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<?php include('includes/nav.html'); ?>
+	<?php include('includes/nav.php'); ?>
 <section class="movie-detail">
 	
 	<?php
@@ -39,6 +39,6 @@
 	?>
 	
 </section>
-<?php include('includes/footer.html'); ?>
+<?php include('includes/footer.php'); ?>
 </body>
 </html>

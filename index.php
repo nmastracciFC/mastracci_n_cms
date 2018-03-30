@@ -19,7 +19,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to the Finest Selection of Blu-rays on the internets!</title>
+<title>NEWFLIX | Not Illegally Stealing a Brand</title>
 <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -27,7 +27,7 @@
 
 	
 <?php
-	include('includes/nav.html');
+	include('includes/nav.php');
 ?>
 <section>
 <?php
@@ -52,7 +52,7 @@
 ?>
 </section>
 <?php
-	include('includes/footer.html');
+	include('includes/footer.php');
 ?>
 
 <script type="text/javascript" src="js/main.js"></script>
