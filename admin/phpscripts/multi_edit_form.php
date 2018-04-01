@@ -1,8 +1,9 @@
 <?php
 function multi_edit($table, $column) {
 	$result = getAll($table);
-	// var_dump($result); die;
-	$getResult = mysqli_fetch_array($result);
+	
+	// $getResult = mysqli_fetch_array($result);
+	// var_dump($getResult); die;
 
 	echo "<form action=\"phpscripts/edit.php\" method=\"post\">"; 
 
