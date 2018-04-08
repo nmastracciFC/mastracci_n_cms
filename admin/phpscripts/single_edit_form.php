@@ -3,6 +3,7 @@ function single_edit($table, $column, $id) {
 	$result = getSingle($table, $column, $id);
 	// var_dump($result); die;
 	$getResult = mysqli_fetch_array($result);
+	// var_dump($getResult); die;
 
 	echo "<form action=\"phpscripts/edit.php\" method=\"post\">"; 
 
@@ -30,6 +31,7 @@ function single_edit($table, $column, $id) {
 				if($fieldType !="252") {
 					//if field type is not equal to 252
 					echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"></div><br> ";
+					// echo "<img src=\"../images/{$row['movies_cover']}\" alt=\"{$row[$getResult[$i]]}\">";
 				} else {
 					echo "<textarea name=\"{$fieldName}\">{$getResult[$i]}</textarea></div><br> ";
 				}

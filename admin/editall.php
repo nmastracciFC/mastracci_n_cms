@@ -19,14 +19,10 @@ error_reporting(E_ALL);
 	
 	<div class="main-content">
 	<?php
-	echo $table;
-	
-
-	//now you can just pass info into these variables and you will get the edit form dynamically created!
-		// $tbl = "tbl_movies";
-		// $col = "movies_id";
-		// $id = 1; //this is hardcoded but you use get to pass in id otherwise
-		// echo single_edit($tbl, $col, $id);
+	$id = $_GET['id'];
+	$tbl = "tbl_movies";
+	$col = "movies_id";
+		echo single_edit($tbl, $col, $id);
 
 	?>
 	</div>
