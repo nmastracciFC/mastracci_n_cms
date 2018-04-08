@@ -1,6 +1,6 @@
 <!-- <h2>Display Movies By Genre</h2> -->
 <header>
-<h1 class="logo">Newflix</h1>
+<h1 class="logo">newflix</h1>
 <ul class="genre-nav">
 	<li><a href="index.php?filter=action">Action</a></li>
 	<li><a href="index.php?filter=comedy">Comedy</a></li>

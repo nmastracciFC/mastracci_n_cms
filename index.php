@@ -20,7 +20,8 @@
 <head>
 <meta charset="UTF-8">
 <title>NEWFLIX | Not Illegally Stealing a Brand</title>
-<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
