@@ -1,5 +1,5 @@
 <?php
-function single_edit($table, $column, $id) {
+function single_edit($table, $column, $id, $cover) {
 	$result = getSingle($table, $column, $id);
 	// var_dump($result); die;
 	$getResult = mysqli_fetch_array($result);
@@ -10,6 +10,7 @@ function single_edit($table, $column, $id) {
 	echo "<input hidden name=\"tbl\" value=\"{$table}\"> ";
 	echo "<input hidden name=\"col\" value=\"{$column}\"> ";
 	echo "<input hidden name=\"id\" value=\"{$id}\"> ";
+	echo "<img class=\"image-size\" src=\"../images/{$cover}\" alt=\"{$cover}\">";
 
 	// echo mysqli_num_fields($result);//how many columns are in this table
 	for($i = 0; $i<mysqli_num_fields($result); $i++){
@@ -28,6 +29,7 @@ function single_edit($table, $column, $id) {
 			if($fieldName != $column) {
 				//do not allow them access to the id column
 				echo "<div class=\"field-area\"><label>{$fieldName}</label>";
+
 				if($fieldType !="252") {
 					//if field type is not equal to 252
 					echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"></div><br> ";

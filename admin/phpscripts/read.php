@@ -28,7 +28,8 @@ function getSingle($table, $column, $id){ //order matters
 	$querySingle = "SELECT * FROM {$table} WHERE {$column} = {$id}";
 
 	$runSingle = mysqli_query($link, $querySingle);
-// var_dump($runSingle[0]);die;
+	// echo $runSingle;
+// var_dump($runSingle);die;
 	if($runSingle){
 		return $runSingle;
 

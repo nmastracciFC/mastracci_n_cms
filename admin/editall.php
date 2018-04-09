@@ -22,7 +22,9 @@ error_reporting(E_ALL);
 	$id = $_GET['id'];
 	$tbl = "tbl_movies";
 	$col = "movies_id";
-		echo single_edit($tbl, $col, $id);
+	$cover = $_GET['cover'];
+	// echo $cover;
+		echo single_edit($tbl, $col, $id, $cover);
 
 	?>
 	</div>

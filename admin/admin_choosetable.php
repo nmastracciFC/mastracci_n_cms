@@ -78,7 +78,7 @@ error_reporting(E_ALL);
 			echo "
 				<div class=\"movie-list\">
 					
-					<a href=\"editall.php?id={$row['movies_id']}\">
+					<a href=\"editall.php?id={$row['movies_id']}&cover={$row['movies_cover']}\">
 						<img src=\"../images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
 					</a><br><br>
 					
