@@ -18,7 +18,7 @@
 	<section class="main-content">
 		<h2>Hi <?php echo $_SESSION['user_fname'];?>! What would you like to alter?</h2>
 
-		<a class="button-nav" href="admin_choosetable.php">Edit Site Info</a>
+		<a class="button-nav" href="admin_editcontent.php">Edit Site Info</a>
 		<a class="button-nav" href="admin_createuser.php">Create User</a>
 		<a class="button-nav" href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
 		<h3><?php echo $greeting; ?></h3>
