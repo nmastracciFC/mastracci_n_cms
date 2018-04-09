@@ -8,7 +8,7 @@
 			logged_out();
 		}else if($dir == "delete") {
 			$id = $_GET['id'];
-			deleteUser($id);
+			deleteMovie($id);
 		}else{
 			echo "Caller id was passed incorrectly.";
 		}

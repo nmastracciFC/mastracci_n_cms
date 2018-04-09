@@ -8,4 +8,5 @@
 	require_once('addmovie.php');
 	require_once('single_edit_form.php');
 	require_once('multi_edit_form.php');
+	require_once('deletemovie.php');
 ?>

@@ -1,8 +1,8 @@
 <?php
 	require_once('phpscripts/config.php');
 	//confirm_logged_in();
-	$tbl = "tbl_user";
-	$users = getAll($tbl);
+	$tbl = "tbl_movies";
+	$movies = getAll($tbl);
 ?>
 <!doctype html>
 <html>
@@ -15,10 +15,12 @@
 	<?php include('../includes/adminnav.php'); ?>
 	
 	<section class="main-content">
-	<h2>Time to destroy some lives...</h2>
+	<h2>Deleting is Permanent -- BE SURE</h2>
 	<?php
-		while($row = mysqli_fetch_array($users)){
-			echo "{$row['user_fname']} <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Fired</a><br>";
+		while($row = mysqli_fetch_array($movies)){
+			echo "<img class=\"image-size\" src=\"../images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\">
+			<h4>{$row['movies_title']}</h4> 
+			<a class=\"large-text\" href=\"phpscripts/caller.php?caller_id=delete&id={$row['movies_id']}\">Delete For Ever and Ever</a><br>";
 		}
 	?>
 	</section>

@@ -73,6 +73,7 @@ h1 {
 
 
 .genre-nav {
+	/*width: 15em;*/
 	display: inline-block;
 	text-align:right;
 	margin: 1em;
@@ -255,6 +256,17 @@ h1 {
 }
 .image-size {
 	width: 10em;
+}
+.large-text {
+	font-size:2em;
+	text-decoration: none;
+	color: #ab809a;
+	transition:all 0.2s ease;
+}
+.large-text:hover {
+	font-size:3.5em;
+	text-decoration: none;
+	color: red;
 }
 
 

@@ -20,6 +20,7 @@
 
 		<a class="button-nav" href="admin_editcontent.php">Edit Current Movie Info</a>
 		<a class="button-nav" href="admin_addmovie.php">Add A Movie</a>
+		<a class="button-nav" href="admin_deleteuser.php">Delete A Movie</a>
 		<a class="button-nav" href="admin_createuser.php">Create User</a>
 		<!-- <a class="button-nav" href="phpscripts/caller.php?caller_id=logout">Sign Out</a> -->
 		<h3><?php echo $greeting; ?></h3>
