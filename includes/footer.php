@@ -10,3 +10,4 @@
 	<p>&copy; NEWFLIX <?php echo date("Y"); ?></p>
 </div>
 </footer>
+<script src="../js/main.js"></script>

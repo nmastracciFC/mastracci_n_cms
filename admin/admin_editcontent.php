@@ -28,10 +28,11 @@ error_reporting(E_ALL);
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
 	
 	<section class="main-content">
 	<h2>Edit Site Info</h2>
+	<h4>Click on the cover to edit the details for that movie.</h4>
 
 	<?php
 	if(!is_string($getMovies)){

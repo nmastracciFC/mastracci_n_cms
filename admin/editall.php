@@ -15,7 +15,7 @@ error_reporting(E_ALL);
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
 	
 	<div class="main-content">
 	<?php

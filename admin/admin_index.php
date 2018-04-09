@@ -13,14 +13,15 @@
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
 	
 	<section class="main-content">
 		<h2>Hi <?php echo $_SESSION['user_fname'];?>! What would you like to alter?</h2>
 
-		<a class="button-nav" href="admin_editcontent.php">Edit Site Info</a>
+		<a class="button-nav" href="admin_editcontent.php">Edit Current Movie Info</a>
+		<a class="button-nav" href="admin_addmovie.php">Add A Movie</a>
 		<a class="button-nav" href="admin_createuser.php">Create User</a>
-		<a class="button-nav" href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
+		<!-- <a class="button-nav" href="phpscripts/caller.php?caller_id=logout">Sign Out</a> -->
 		<h3><?php echo $greeting; ?></h3>
 		<h3><?php echo "The time is " . date("h:ia");?></h3>
 		<h3>Last Login:<br><?php echo date_create($_SESSION['user_lastlog'])->format('F d, Y  g:ia'); ?> </h3>

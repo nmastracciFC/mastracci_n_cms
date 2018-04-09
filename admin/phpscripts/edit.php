@@ -4,13 +4,13 @@ include('connect.php');
 
 	$tbl = $_POST['tbl'];
 	$col = $_POST['col'];
-	// $id = $_POST['id'];
+	$id = $_POST['id'];
 
 
 	//remove from array
 	unset($_POST['tbl']);
 	unset($_POST['col']);
-	// unset($_POST['id']);
+	unset($_POST['id']);
 	unset($_POST['submit']);
 
 	
@@ -37,11 +37,11 @@ include('connect.php');
 	}
 
 	$qstring .= "WHERE {$col}={$id}";
-	// echo $qstring;
+	// echo $qstring; die;
 	$updatequery = mysqli_query($link, $qstring);
 
 	if($updatequery){
-		header("location: ../../index.php");
+		header("location: ../admin_index.php");
 
 	}else{
 		echo "there was a problem changing this content. Contact your web admin.";

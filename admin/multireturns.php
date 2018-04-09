@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
 	
 	<?php
 	echo "Result 1: {$result[0]}<br>";

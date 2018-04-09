@@ -23,7 +23,7 @@
 <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
 	<div class="main-content">
 		<?php if(!empty($message)){ echo $message;} ?>
 		<form action="admin_login.php" method="post">

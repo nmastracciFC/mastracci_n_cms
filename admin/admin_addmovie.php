@@ -25,13 +25,16 @@
 <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<?php include('../includes/nav.php'); ?>
+	<?php include('../includes/adminnav.php'); ?>
+	
 	
 	<section class="main-content">
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
 		<label>Cover Image:</label>
-		<input type="file" name="cover" value="">
+		<img class="image-size" id="new-image" src="#" alt="your uploaded image will appear here" />
+		<input type="file" id="cover-image" name="cover" value="">
+
 		<br><br>
 		<label>Movie Title:</label>
 		<input type="text" name="title" value="">
